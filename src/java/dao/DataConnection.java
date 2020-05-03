@@ -20,7 +20,7 @@ public class DataConnection {
     private DataConnection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.jdbc.Driver");
         
-        cnn = DriverManager.getConnection("jdbc:mysql://localhost:3306/webmvc", "root","root");
+        cnn = DriverManager.getConnection("jdbc:mysql://localhost:3306/webmvc", "user","pass");
     }
     
     //3. Metodo de clase tipo de la clase
